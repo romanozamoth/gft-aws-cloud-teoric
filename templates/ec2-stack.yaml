@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
+Description: Exemplo de Stack CloudFormation
+
+Resources:
+  WebServer:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-1234567890abcdef0
+      Tags:
+        - Key: Name
+          Value: CloudFormation-Lab
